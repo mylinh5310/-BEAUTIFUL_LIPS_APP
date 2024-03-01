@@ -6,7 +6,7 @@ import android.graphics.BitmapRegionDecoder;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-
+//chuyển đổi dữ liệu hình ảnh giữa các định dạng khác nhau.
 public class DataConvert {
     public static byte [] ConvertImages (Bitmap bitmap){
         ByteArrayOutputStream stream = new ByteArrayOutputStream();

@@ -74,7 +74,7 @@ public class SignUpActivity2 extends AppCompatActivity {
             }
         });
     }
-
+// Anh xa
     private void mapping() {
         mEditText_user=findViewById(R.id.edt_user_sup);
         mEditText_pass1=findViewById(R.id.edt_pass_sup);

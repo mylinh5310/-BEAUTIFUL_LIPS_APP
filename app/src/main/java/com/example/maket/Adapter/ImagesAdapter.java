@@ -13,7 +13,7 @@ import com.example.maket.R;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Hiển thi danh sách hình ảnh
 public class ImagesAdapter extends BaseAdapter {
 
     private Context context;

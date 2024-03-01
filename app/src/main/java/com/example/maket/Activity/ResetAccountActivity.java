@@ -18,6 +18,7 @@ import com.example.maket.R;
 import java.util.List;
 
 public class ResetAccountActivity extends AppCompatActivity {
+    // Khai báo các text, button
     private EditText mEditText_user;
     private EditText mEditText_pas1;
     private EditText mEditText_pas2;

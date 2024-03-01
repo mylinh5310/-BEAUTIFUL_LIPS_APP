@@ -16,8 +16,9 @@
             android:layout_width="130dp"
             android:layout_height="120dp"
             android:layout_gravity="center"
-            android:layout_marginTop="0dp"
-            android:src="@drawable/me"/>
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/hom"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,15 +59,17 @@
         android:textColor="#F44336"
         android:id="@+id/tv_thunhap"
         android:text="Tổng thu nhập "/>
-     <Button
+
+    <Button
+        android:id="@+id/btn_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Log Out"
-        android:textSize="25dp"
         android:layout_marginTop="65dp"
-        android:textColor="#C8180B"
         android:background="@drawable/botron_btn_acc"
-        android:id="@+id/btn_logout"/>
+        android:text="Log Out"
+        android:textColor="#C8180B"
+        android:textSize="25dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

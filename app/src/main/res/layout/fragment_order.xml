@@ -12,7 +12,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcl_oder"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="536dp"
         android:orientation="vertical" />
     <LinearLayout
         android:layout_width="match_parent"

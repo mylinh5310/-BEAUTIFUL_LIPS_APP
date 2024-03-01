@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         mImageView_addacc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // tạo intent chuyển từ đăng nhập sang đăng ký
                Intent intent= new Intent(MainActivity.this,SignUpActivity2.class);
                startActivity(intent);
             }
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         mImageView_Reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Chuyển từ đăng nhập sang sửa mật khẩu
                 Intent intent = new Intent(MainActivity.this,ResetAccountActivity.class);
                 startActivity(intent);
             }

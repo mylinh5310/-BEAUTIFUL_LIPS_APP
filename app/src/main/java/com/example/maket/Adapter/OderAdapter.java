@@ -20,7 +20,7 @@ import com.example.maket.R;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// hiển thị danh sách các đơn hàng (được biểu thị bằng các đối tượng Order) trong một RecyclerView
 public class OderAdapter extends RecyclerView.Adapter<OderAdapter.ViewHolder> {
 
     private Context mContext;

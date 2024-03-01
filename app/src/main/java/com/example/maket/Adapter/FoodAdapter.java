@@ -24,7 +24,7 @@ import com.example.maket.R;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Dùng để hiển thị danh sách các món ăn
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
 
     ArrayList<Foody> foodyArrayList;
