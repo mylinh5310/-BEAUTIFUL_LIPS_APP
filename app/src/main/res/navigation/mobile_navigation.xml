@@ -13,17 +13,17 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.maket.ui.oder.OrderFragment"
-        android:label="My Orders"
+        android:name="com.example.maket.ui.oder.OrderFrag"
+        android:label="Đặt hàng"
         tools:layout="@layout/fragment_order" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.maket.ui.Me.MeFragment"
-        android:label="Me"
+        android:label="Tôi"
         tools:layout="@layout/fragment_me" />
     <fragment
         android:id="@+id/add_foodFragment"
-        android:name="com.example.maket.ui.add_food.AddFoodFragment"
-        android:label="Add_foodFragment" />
+        android:name="com.example.maket.ui.add_lips.AddLipFrag"
+        android:label="Thêm sản phẩm" />
 </navigation>

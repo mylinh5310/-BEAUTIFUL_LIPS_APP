@@ -1,5 +1,4 @@
 package com.example.maket.Activity;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -14,8 +13,7 @@ import com.example.maket.Entity.Account;
 import com.example.maket.R;
 
 import java.util.List;
-
-public class ListAccActivity extends AppCompatActivity {
+public class ListAccountActivity extends AppCompatActivity{
     ListView mlistView;
     Context context;
     @SuppressLint("WrongViewCast")
@@ -40,3 +38,5 @@ public class ListAccActivity extends AppCompatActivity {
 //        mlistView.setAdapter(adapter);
     }
 }
+
+

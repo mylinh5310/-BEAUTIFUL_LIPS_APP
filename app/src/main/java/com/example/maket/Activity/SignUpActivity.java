@@ -17,7 +17,7 @@ import com.example.maket.R;
 
 import java.util.List;
 
-public class SignUpActivity2 extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
     private EditText mEditText_user;
     private EditText mEditText_pass1;
     private EditText mEditText_pass2;
@@ -60,9 +60,9 @@ public class SignUpActivity2 extends AppCompatActivity {
                         Account account = new Account(us,pas1);
                         AccountDatabase database2 =AccountDatabase.getInstance(getApplicationContext());
                         database.daoAccount().insert_account(account);
-                        Intent intent =new Intent(SignUpActivity2.this,MainActivity.class);
+                        Intent intent =new Intent(SignUpActivity.this,MainActiviti.class);
                         Toast.makeText(getApplicationContext(),
-                        "Đăng kí thành công !", Toast.LENGTH_SHORT).show();
+                                "Đăng kí thành công !", Toast.LENGTH_SHORT).show();
                         startActivity(intent);
                     }catch (Exception e){
                         Log.e("ERRO",""+e);
@@ -74,7 +74,7 @@ public class SignUpActivity2 extends AppCompatActivity {
             }
         });
     }
-// Anh xa
+    // Anh xa
     private void mapping() {
         mEditText_user=findViewById(R.id.edt_user_sup);
         mEditText_pass1=findViewById(R.id.edt_pass_sup);

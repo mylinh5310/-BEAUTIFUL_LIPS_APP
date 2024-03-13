@@ -155,9 +155,9 @@ public class HomeFragment extends Fragment implements BottomSheet.BottomSheetLis
 
     // tim kiem tren recyc
     private void mapping() {
-        imageArrayList.add(new Image("Trà sửa đồng giá ", R.drawable.now1));
-        imageArrayList.add(new Image("Giảm giá 30%", R.drawable.now2));
-        imageArrayList.add(new Image("Phí ship chỉ 10k", R.drawable.now3));
+        imageArrayList.add(new Image("Son hot nhất ", R.drawable.now1));
+        imageArrayList.add(new Image("Nhiều ưu đãi", R.drawable.now2));
+        imageArrayList.add(new Image("Mua thả ga", R.drawable.now3));
     }
 
     @Override

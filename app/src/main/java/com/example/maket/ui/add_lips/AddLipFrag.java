@@ -1,9 +1,8 @@
-package com.example.maket.ui.add_food;
+package com.example.maket.ui.add_lips;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -13,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.provider.MediaStore;
 import android.text.InputType;
@@ -30,7 +28,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.maket.Activity.Home_Activity2;
+import com.example.maket.Activity.HomeActivity;
 import com.example.maket.Convert.DataConvert;
 import com.example.maket.DAO.AppDatabase;
 import com.example.maket.Entity.Foody;
@@ -41,7 +39,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddFoodFragment extends Fragment {
+public class AddLipFrag extends Fragment {
     private static final int REQUESTCODE_CAMERA = 777;
     private static final int REQUESTCODE_FOLDER = 999;
     private EditText mEditText_name;
@@ -57,13 +55,13 @@ public class AddFoodFragment extends Fragment {
     Bitmap bitmapImages = null;
 
     private TextView textView;
-    private AddFoodVIewModel addFoodVIewModel;
+    private AddLipsViewModel addFoodVIewModel;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         addFoodVIewModel =
-                ViewModelProviders.of(this).get(AddFoodVIewModel.class);
+                ViewModelProviders.of(this).get(AddLipsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_addfood, container, false);
         mEditText_name = root.findViewById(R.id.edt_namefood);
         mEditText_price = root.findViewById(R.id.edt_price);
@@ -74,9 +72,9 @@ public class AddFoodFragment extends Fragment {
         mImageView_imagesfood = root.findViewById(R.id.imv_add_food);
         mSpinner_food = root.findViewById(R.id.spn_food);
         list = new ArrayList<>();
-        list.add("Đồ ăn vặt");
-        list.add("Thức ăn chính");
-        list.add("Giải khát");
+        list.add("Nội địa Trung");
+        list.add("Hàn Quốc");
+        list.add("Âu Mỹ");
         ArrayAdapter adapter = new ArrayAdapter(getContext(), R.layout.support_simple_spinner_dropdown_item, list);
         mSpinner_food.setAdapter(adapter);
 
@@ -135,7 +133,7 @@ public class AddFoodFragment extends Fragment {
                     foody.setDetail(review);
                     foody.setImage(DataConvert.ConvertImages(bitmapImages));
                     db.daoFood().insertFoody(foody);
-                    Intent intent = new Intent(getContext(), Home_Activity2.class);
+                    Intent intent = new Intent(getContext(), HomeActivity.class);
                     startActivity(intent);
                 } catch (Exception e) {
                     Log.e("ERRO", "" + e);
@@ -177,6 +175,7 @@ public class AddFoodFragment extends Fragment {
     }
 
 }
+
 
 
 

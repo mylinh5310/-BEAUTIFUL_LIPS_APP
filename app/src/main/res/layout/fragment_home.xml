@@ -17,14 +17,15 @@
         android:id="@+id/sv_serch"
         android:background="@drawable/botron_search"
         android:queryHint="Tim kiem" />
+
     <GridView
+        android:id="@+id/gv_intro"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_margin="5dp"
-        android:numColumns="3"
         android:horizontalSpacing="5dp"
-        android:verticalSpacing="0dp"
-        android:id="@+id/gv_intro"/>
+        android:numColumns="3"
+        android:verticalSpacing="0dp" />
 
 
     <androidx.recyclerview.widget.RecyclerView

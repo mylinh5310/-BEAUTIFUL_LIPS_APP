@@ -9,14 +9,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.maket.Activity.ListAccActivity;
-import com.example.maket.Activity.MainActivity;
+import com.example.maket.Activity.MainActiviti;
 import com.example.maket.DAO.AppDatabase;
 import com.example.maket.Database.AccountDatabase;
 import com.example.maket.Database.BuyDatabase;
@@ -28,7 +26,7 @@ import com.example.maket.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MeFragment extends Fragment {
+public class  MeFragment extends Fragment {
 private Button mButton_logout;
 private TextView mTextView_name_me;
 private ListView mListView_me;
@@ -54,7 +52,7 @@ Button buttondsacc;
             @Override
             public void onClick(View v) {
 
-                Intent intent= new Intent(getActivity(), MainActivity.class);
+                Intent intent= new Intent(getActivity(), MainActiviti.class);
                 startActivity(intent);
             }
         });

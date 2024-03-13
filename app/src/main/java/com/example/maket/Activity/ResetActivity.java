@@ -1,5 +1,4 @@
 package com.example.maket.Activity;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -16,8 +15,7 @@ import com.example.maket.Entity.Account;
 import com.example.maket.R;
 
 import java.util.List;
-
-public class ResetAccountActivity extends AppCompatActivity {
+public class ResetActivity extends AppCompatActivity{
     // Khai báo các text, button
     private EditText mEditText_user;
     private EditText mEditText_pas1;
@@ -76,7 +74,7 @@ public class ResetAccountActivity extends AppCompatActivity {
                     try {
                         database.daoAccount().update_account(account_update);
                         Toast.makeText(getApplicationContext(), "Mật khẩu của bạn đã được thay đổi", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(ResetAccountActivity.this,MainActivity.class);
+                        Intent intent = new Intent(ResetActivity.this,MainActiviti.class);
                         startActivity(intent);
                     }catch (Exception e){
                         Log.e("ERRO",""+e);
@@ -89,4 +87,5 @@ public class ResetAccountActivity extends AppCompatActivity {
 
 
     }
+
 }

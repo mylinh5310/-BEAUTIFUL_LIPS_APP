@@ -8,7 +8,7 @@
 
         android:layout_marginTop="70dp"
         android:layout_height="30dp"
-        android:hint="Nhập tên món ăn"
+        android:hint="Nhập tên son"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:id="@+id/edt_namefood"
@@ -70,7 +70,7 @@
         android:layout_height="180dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/dior"
         android:id="@+id/imv_add_food"/>
     <Button
         android:layout_width="350dp"
